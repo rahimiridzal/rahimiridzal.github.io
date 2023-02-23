@@ -8,7 +8,7 @@
 }
 
 body {
-    padding-top: 100px; /* set padding-top to the height of the header */
+    padding-top: 50px; /* set padding-top to the height of the header */
     padding-bottom: 100px; /* set padding-bottom to the height of the footer */
   }
 
@@ -167,8 +167,7 @@ header{
     color: #2c3e50;
   }
   
-  .footer {
-    margin-top: 900px;
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -353,7 +352,7 @@ header{
         color: #2c3e50;
       }
       
-      .footer {
+      footer {
         background-color: #f2f2f2;
         padding: 30px 0;
       }
@@ -389,12 +388,8 @@ header{
       }
   }
   
-  @media only screen and (max-height: 680px) {
-
-    .footer {
-        position: relative;
-        margin-top: 700px;
-        bottom: 0;
+  @media only screen and (max-height:915px) {
+    footer {
+        display: none;
     }
-
-    }
+  }
