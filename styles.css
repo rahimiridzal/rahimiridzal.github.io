@@ -9,7 +9,8 @@
 
 body {
     padding-top: 50px; /* set padding-top to the height of the header */
-    padding-bottom: 100px; /* set padding-bottom to the height of the footer */
+    margin: 0;
+    background-color:antiquewhite;
   }
 
 header{
@@ -26,6 +27,7 @@ header{
     top: 0;
     background-color: #f2f2f2;
     z-index: 100;
+    outline: 2px solid #2c3350;
   }
   
   .navbar{
@@ -67,8 +69,11 @@ header{
   }
   
   nav .menu li{
+    position: centre;
     list-style: none;
     margin: 0 10px;
+    padding: 1% 2%;
+    outline: 2px solid #2c3350;
   }
   
   nav .menu a{
@@ -124,26 +129,26 @@ header{
   
 
   .boxes {
-    display: block;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    min-height: 830px;
+    margin-left: -5%;
   }
   
   .box {
+    flex: 1;
     width: 40%;
     background-image: linear-gradient( 135deg, #b7d7d2 10%, #eed0b9 100%);
     padding: 30px 50px 50px 30px;
-    margin-bottom: 20px;
+    margin: 20px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
     color: #2c3350;
-    margin-left: 10px;
     outline: 2px solid #2c3350;
-    width: 84%;
-    max-width: 900px;
+    width: 75%;
+    max-width: 600px;
   }
   
   .box:hover {
@@ -168,6 +173,7 @@ header{
   }
   
   footer {
+    height: 50px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -175,9 +181,11 @@ header{
     background-color: #f2f2f2;
     padding: 50px 10px;
     z-index: 101;
+    outline: 2px solid #2c3350;
   }
   
   .footer-container {
+
     margin: 0 2%;
     display: flex;
     align-items: center;
@@ -194,7 +202,7 @@ header{
     color: #000;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 780px) {
 
     header{
         height: 75px;
@@ -257,7 +265,7 @@ header{
       
       nav .menu a{
         color: #2c3e50;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         text-decoration: none;
       }
@@ -314,6 +322,7 @@ header{
         flex-wrap: wrap;
         margin-top: 35px;
         min-height: 600px;
+        margin-left: 0%;
       }
       
       .box {
@@ -388,7 +397,7 @@ header{
       }
   }
   
-  @media only screen and (max-height:915px) {
+  @media only screen and (max-height:768px) {
     footer {
         display: none;
     }
