@@ -167,7 +167,8 @@ header{
     color: #2c3e50;
   }
   
-  footer {
+  .footer {
+    margin-top: 900px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -279,20 +280,21 @@ header{
       }
       
       .text-content .text{
-        font-size: 18px;
+        font-size: 15px;
         color: #2c3350;
+        margin-bottom: 10px;
       }
       
       .text-content .name{
         color: #2c3350;
-        font-size: 55px;
+        font-size: 40px;
         font-weight: 600;
         margin: -15px 0 0 -2px;
       }
       
       .text-content .job{
         color: #2c3350;
-        font-size: 15px;
+        font-size: 13px;
         margin: 4px 0;
         margin-top: -3px;
         display: flex;
@@ -351,31 +353,48 @@ header{
         color: #2c3e50;
       }
       
-      footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+      .footer {
         background-color: #f2f2f2;
-        padding: 35px 8px;
-        z-index: 101;
+        padding: 30px 0;
       }
       
       .footer-container {
+        max-width: 1200px;
         margin: 0 2%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
       }
-    
+      
+      .social-icons {
+        display: flex;
+      }
+      
       .social-icons a {
-        margin-right: 15px;
+        margin-right: 20px;
         color: #2c3350;
-        font-size: 15px;
+        font-size: 20px;
+        transition: all 0.3s ease;
       }
       
       .social-icons a:hover {
         color: #000;
       }
+      
+      .footer-container p {
+        font-size: 14px;
+        color: #2c3350;
+        text-align: center;
+        margin: 0;
+      }
   }
   
+  @media only screen and (max-height: 680px) {
+
+    .footer {
+        position: relative;
+        margin-top: 700px;
+        bottom: 0;
+    }
+
+    }
