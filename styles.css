@@ -119,7 +119,7 @@ header{
     display: flex;
   }
   
-  .content .girl img{
+  .content .backg img{
     position: absolute;
     height: 95%;
     bottom: 0;
@@ -154,6 +154,7 @@ header{
   .box:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient( 135deg, #b7d7d2 100%, #eed0b9 10%);
   }
   
   .box h2 {
@@ -256,11 +257,12 @@ header{
       
       nav .menu{
         display: flex;
+        margin-right: 5%;
       }
       
       nav .menu li{
         list-style: none;
-        margin: 0 7px;
+        margin: 0 6px;
       }
       
       nav .menu a{
@@ -307,7 +309,7 @@ header{
         display: flex;
       }
       
-      .content .girl img{
+      .content .backg img{
         position: absolute;
         height: 95%;
         bottom: 0;
@@ -397,8 +399,23 @@ header{
       }
   }
   
-  @media only screen and (max-height:780px) {
-    footer {
-        display: none;
+  @media only screen and (max-height:930px) {
+    #page-container {
+      position: relative;
+      min-height: 920px;
+    }
+    body {
+      padding-top: 10px;
+    }
+    
+    #content-wrap {
+      padding-bottom: 2.5rem;    /* Footer height */
+    }
+    
+    #footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;            /* Footer height */
     }
   }
